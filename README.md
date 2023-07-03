@@ -18,5 +18,8 @@ For setting up kafka on windows machine the below steps need to be followed.<br/
             ```      kafka-console-producer.bat --broker-list localhost:9092 --topic test      ```<br/><br/>
   9. Need to open command prompt in C:/Kafka/bin/windows directory and run below command for opening console for consumer <br/>
    ```       kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test --from-beginning            ```<br/>
-   <br/>
+
+ 10. For mentioning number of partitions to an existing topic need to open command prompt in C:/Kafka directory and run below command<br/>
+   ```       .\bin\windows\kafka-topics.bat --bootstrap-server localhost:9092 --alter --topic test --partitions 2        ```
+   
    
